@@ -1,0 +1,21 @@
+.movielist-wrapper {
+  padding: 10px 45px;
+  /* column width */
+  column-width: 300px;
+  /* space between columns */
+  column-gap: 2px;
+}
+
+@media only screen and (max-width: 756px) {
+  .movielist-wrapper {
+    padding: 10px auto;
+    -webkit-column-width: 70%;
+    -moz-column-width: 70%;
+    column-width: 70%;
+    -webkit-column-gap: 2px;
+    -moz-column-gap: 2px;
+    column-gap: 2px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+}
