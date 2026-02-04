@@ -26,7 +26,12 @@ const MovieCard = (props) => (
           </a>
           {props.trackPrice && (
             <p className="right kind white-text bg-dark">
-              Rent: ${props.trackPrice}
+              ${props.trackPrice}
+            </p>
+          )}
+          {props.collectionPrice && !props.trackPrice && (
+            <p className="right kind white-text bg-dark">
+              ${props.collectionPrice}
             </p>
           )}
         </p>

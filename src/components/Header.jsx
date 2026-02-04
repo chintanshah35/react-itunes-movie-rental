@@ -2,7 +2,7 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 import '../style/Header.css';
 
 const Header = ({ onSearch }) => {
-  const [media, setMedia] = useState('Movie');
+  const [media, setMedia] = useState('Music');
   const [query, setQuery] = useState('');
   const rafRef = useRef(null);
   const tickingRef = useRef(false);
@@ -40,7 +40,7 @@ const Header = ({ onSearch }) => {
     <div className="navbar-fixed">
       <nav>
         <div className="nav-wrapper bg-dark">
-          <span className="ims-title">iTunes Movie Search</span>
+          <span className="ims-title">iTunes Search</span>
           <div className="header-search-wrapper">
             <i className="material-icons black-text">search</i>
             <input
